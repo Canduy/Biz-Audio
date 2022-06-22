@@ -1,0 +1,58 @@
+.form-login {
+  margin: auto;
+  padding: 10px 22px;
+  width: 70%;
+  height: 100%;
+  //   max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #333;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 50px 0;
+}
+
+.login-btn {
+  width: 100%;
+}
+
+.register {
+  margin-top: 60px;
+  text-align: center;
+}
+.text-color {
+  color: #333;
+  margin-left: 5px;
+}
+
+.cancel {
+  margin-top: 20px;
+  color: #3d40c6;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cancel span {
+  display: block;
+  margin-right: 10px;
+}
+
+.icon {
+  position: relative;
+}
+
+.icon-fb {
+  left: -30px;
+}
+.icon-gg {
+  left: -38px;
+}

@@ -1,0 +1,17 @@
+.back {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 40px;
+  font-size: 16px;
+  color: var(--back-text);
+}
+.back-text {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--back-text);
+}
+.back-icon {
+  display: block;
+  margin-right: 10px;
+}

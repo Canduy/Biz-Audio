@@ -1,0 +1,48 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  font-size: 1.6rem;
+  //   font-weight: 700;
+  //   min-width: 100px;
+  padding: 9px 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  user-select: none;
+  width: 100%;
+}
+.primary {
+  color: var(--text-white);
+  background-color: var(--primay-color);
+}
+.gray {
+  background-color: var(--btn-google);
+}
+.forgot {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.text {
+  color: #1890ff;
+  font-weight: bold;
+  //   justify-content: flex-start;
+}
+.marginTop {
+  margin-top: 24px;
+}
+
+.text-children {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.large {
+  padding: 12px 16px;
+}
