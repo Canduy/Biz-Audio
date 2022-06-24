@@ -14,6 +14,7 @@ function Button({
   forgot,
   className,
   large,
+  disable,
   leftIcon,
   onClick,
   children,
@@ -29,6 +30,7 @@ function Button({
     marginTop,
     text,
     large,
+    disable,
     forgot,
   });
   const props = { onClick, ...passProps };
@@ -54,9 +56,11 @@ Button.propTypes = {
   marginTop: PropTypes.bool,
   text: PropTypes.bool,
   forgot: PropTypes.bool,
+  large: PropTypes.bool,
   className: PropTypes.string,
   onClick: PropTypes.func,
   forgot: PropTypes.bool,
+  disable: PropTypes.bool,
 };
 
 export default Button;

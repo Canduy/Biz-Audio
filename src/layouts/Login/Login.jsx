@@ -4,6 +4,7 @@ import { useState } from "react";
 import BackBtn from "../../components/BackBtn/BackBtn";
 import Button from "../../components/Button/Button";
 import { EyeIcon } from "../../components/Icon";
+import Input from "../../components/Input/Input";
 import Title from "../../components/Title/Title";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import styles from "./Login.module.scss";
@@ -63,7 +64,7 @@ function Login() {
   return (
     <Wrapper>
       <div className={cx("login")}>
-        <BackBtn to="/auth" />
+        <BackBtn to="/auth" label="Quay lại" />
         <div className={cx("form-group")}>
           <form action="" className={cx("form")}>
             <Title>
@@ -73,7 +74,7 @@ function Login() {
               </div>
             </Title>
             <div className={cx("login-input")}>
-              <input
+              <Input
                 type="text"
                 value={emailValue}
                 onChange={handleChangeEmail}
@@ -88,7 +89,7 @@ function Login() {
               <span className={cx("error-message")}>{errorMesageEmail}</span>
             )}
             <div className={cx("login-input", "login-password")}>
-              <input
+              <Input
                 value={passwordValue}
                 onChange={handleChangePassword}
                 type={hidePass ? "text" : "password"}

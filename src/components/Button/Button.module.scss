@@ -14,11 +14,11 @@
   width: 100%;
 }
 .primary {
-  color: var(--text-white);
-  background-color: var(--primay-color);
+  color: var(--text-white, #fff);
+  background-color: var(--primay-color, #4666d5);
 }
 .gray {
-  background-color: var(--btn-google);
+  background-color: var(--btn-google, #eff0f7);
 }
 .forgot {
   color: #000;
@@ -44,5 +44,12 @@
 }
 
 .large {
+  color: var(--text-white, #fff);
+  background-color: var(--primay-color, #4666d5);
   padding: 12px 16px;
+}
+
+.disable {
+  background-color: var(--disable-bg, #d9dbe9);
+  color: var(--disabel-color, #f7f7fc);
 }

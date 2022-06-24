@@ -6,6 +6,7 @@ import BackBtn from "../../components/BackBtn/BackBtn";
 import Title from "../../components/Title/Title";
 import Button from "../../components/Button/Button";
 import { useState } from "react";
+import Input from "../../components/Input/Input";
 const cx = classNames.bind(styles);
 function ForgotPass() {
   const [errorMessage, setErrorMessage] = useState("");
@@ -29,7 +30,7 @@ function ForgotPass() {
   return (
     <Wrapper>
       <div className={cx("forgot-password")}>
-        <BackBtn to="/login" />
+        <BackBtn to="/login" label="Quay lại" />
         <div className={cx("form-forgot")}>
           <form action="">
             <Title>
@@ -42,7 +43,7 @@ function ForgotPass() {
               </div>
             </Title>
             <div className={cx("forgot-input")}>
-              <input
+              <Input
                 value={emailValue}
                 onChange={(e) => setEmailValue(e.target.value)}
                 type="text"

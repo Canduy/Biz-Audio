@@ -1,4 +1,5 @@
 import classNames from "classnames/bind";
+import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import { FacebookIcon, GoogleIcon, RightIcon } from "../../components/Icon";
 import Title from "../../components/Title/Title";
@@ -35,9 +36,11 @@ function Auth() {
             Đăng kí <span className={cx("text-color")}>tài khoản BIBOO</span>{" "}
           </Button>
         </div>
-        <div className={cx("cancel")}>
-          <span>bỏ qua</span>
-          <RightIcon />
+        <div>
+          <Link to="/topic" className={cx("cancel")}>
+            bỏ qua
+            <RightIcon />
+          </Link>
         </div>
       </div>
     </Wrapper>

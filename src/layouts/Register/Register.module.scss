@@ -31,13 +31,20 @@
 .register-input-name,
 .register-input-pass,
 .register-input-passagain {
-  width: 100%;
-  height: 40px;
-  border-radius: 13px;
-  border: none;
-  outline: none;
-  padding-left: 24px;
-  background-color: var(--bg-input);
+  // width: 100%;
+  // height: 40px;
+  // border-radius: 13px;
+  // border: none;
+  // outline: none;
+  // padding-left: 24px;
+  // background-color: var(--bg-input);
+  color: #a0a3bd;
+  font-size: 17px;
+
+  &::placeholder {
+    color: #a0a3bd;
+    font-weight: 300;
+  }
 }
 
 .register-input-pass,
@@ -45,7 +52,8 @@
   width: 84%;
 }
 
-.hidden-password {
+.hidden-password,
+.hide {
   min-width: 40px;
   min-height: 40px;
   border-radius: 50%;
@@ -57,8 +65,33 @@
   cursor: pointer;
   transition: all 0.1s ease;
 }
+.hide {
+  background-color: #d9dbe9;
+}
 .btn-register {
   margin-top: 60px;
+}
+
+.error-message {
+  color: var(--error-message);
+  font-size: 11px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.border-error {
+  color: #a0a3bd;
+  font-size: 17px;
+  border: 1px solid var(--error-message);
+
+  &::placeholder {
+    color: #a0a3bd;
+    font-weight: 300;
+  }
 }
 
 .register-text {
@@ -68,6 +101,7 @@
     font-size: 15px;
     color: #4e4b66;
     font-weight: 500;
+    letter-spacing: 1px;
 
     .text-color {
       font-weight: 300;

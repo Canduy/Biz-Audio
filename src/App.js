@@ -1,10 +1,10 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Wrapper from "./components/Wrapper/Wrapper";
 import Auth from "./layouts/Auth/Auth";
-import Login from "./layouts/Login/Login";
 import ForgotPass from "./layouts/ForgotPass/ForgotPass";
+import Login from "./layouts/Login/Login";
 import Register from "./layouts/Register/Register";
+import Topic from "./layouts/Topic/Topic";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPass />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/topic" element={<Topic />} />
         </Routes>
       </BrowserRouter>
     </div>

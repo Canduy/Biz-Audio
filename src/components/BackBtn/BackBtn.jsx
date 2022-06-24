@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { LeftIcon } from "../Icon";
 
 const cx = classNames.bind(styles);
-function BackBtn({ to }) {
+function BackBtn({ to, label }) {
   return (
     <div className={cx("back")}>
       <Link to={to} className={cx("back-text")}>
         <LeftIcon className={cx("back-icon")} />
-        Quay lai
+        {label}
       </Link>
     </div>
   );

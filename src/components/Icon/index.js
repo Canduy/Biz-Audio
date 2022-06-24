@@ -1,4 +1,11 @@
-export const FacebookIcon = ({ width = "20", height = "20", className }) => (
+import PropTypes from "prop-types";
+
+export const FacebookIcon = ({
+  width = "20",
+  height = "20",
+  className,
+  background = "#4666d5",
+}) => (
   <svg
     className={className}
     width={width}
@@ -15,6 +22,13 @@ export const FacebookIcon = ({ width = "20", height = "20", className }) => (
     />
   </svg>
 );
+
+FacebookIcon.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  className: PropTypes.string,
+  background: PropTypes.string,
+};
 
 export const GoogleIcon = ({ width = "20", height = "20", className }) => (
   <svg
@@ -44,6 +58,12 @@ export const GoogleIcon = ({ width = "20", height = "20", className }) => (
   </svg>
 );
 
+GoogleIcon.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  className: PropTypes.string,
+};
+
 export const RightIcon = ({ width = "20", height = "20", className }) => (
   <svg
     className={className}
@@ -71,6 +91,12 @@ export const RightIcon = ({ width = "20", height = "20", className }) => (
     />
   </svg>
 );
+
+RightIcon.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  className: PropTypes.string,
+};
 
 export const LeftIcon = ({ width = "20", height = "20", className }) => (
   <svg
@@ -101,6 +127,12 @@ export const LeftIcon = ({ width = "20", height = "20", className }) => (
   </svg>
 );
 
+LeftIcon.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  className: PropTypes.string,
+};
+
 export const EyeIcon = ({ width = "18", height = "18", className }) => (
   <svg
     className={className}
@@ -129,3 +161,41 @@ export const EyeIcon = ({ width = "18", height = "18", className }) => (
     />
   </svg>
 );
+
+EyeIcon.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  className: PropTypes.string,
+};
+
+export const SearchIcon = ({ width = "24", height = "24", className }) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z"
+      stroke="#6E7191"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M21 21L18 18"
+      stroke="#6E7191"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+SearchIcon.propTypes = {
+  width: PropTypes.string,
+  height: PropTypes.string,
+  className: PropTypes.string,
+};
