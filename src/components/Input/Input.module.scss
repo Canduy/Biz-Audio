@@ -1,5 +1,6 @@
 .input {
   width: 100%;
+  // width: 300px;
   height: 40px;
   border-radius: 13px;
   border: none;
@@ -8,5 +9,7 @@
   background-color: var(--bg-input, #eff0f7);
 }
 .lg {
+  padding: 4px 50px;
+  // padding-left: 24px;
   height: 53px;
 }

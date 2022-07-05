@@ -1,0 +1,38 @@
+.footer-info {
+  max-width: 30%;
+  &__heading {
+    display: flex;
+    align-items: center;
+    grid-gap: 14px;
+    gap: 14px;
+    margin-bottom: 16px;
+
+    h2 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: inherit;
+      text-transform: uppercase;
+      line-height: 24px;
+    }
+  }
+
+  &__content {
+    .content-certi {
+      display: flex;
+      align-items: center;
+      grid-gap: 30px;
+      gap: 30px;
+      margin-bottom: 32px;
+    }
+
+    .content-address,
+    .content-contact {
+      display: flex;
+      align-items: center;
+      grid-gap: 30px;
+      gap: 30px;
+      margin-bottom: 32px;
+    }
+  }
+}

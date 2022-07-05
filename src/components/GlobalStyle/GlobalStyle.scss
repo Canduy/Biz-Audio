@@ -32,13 +32,25 @@ body {
 @font-face {
   font-family: "SVN-Gilroy";
   src: url("../../assets/fonts/SVN-Gilroy-Regular.6b1bcdc2.otf");
-  font-weight: 400;
+  font-weight: 300;
 }
+
+// @font-face {
+//   font-family: "SVN-Gilroy";
+//   src: url("../../assets/fonts/SVN-Gilroy-Medium.bc38048a.otf");
+//   font-weight: 500;
+// }
+
+// @font-face {
+//   font-family: "SVN-Gilroy";
+//   src: url("../../assets/fonts/SVN-Gilroy-SemiBold.ee43a489.otfS");
+//   font-weight: 600;
+// }
 
 @font-face {
   font-family: "SVN-Gilroy";
-  src: url("../../assets/fonts/SVN-Gilroy-Medium.bc38048a.otf");
-  font-weight: 500;
+  src: url("../../assets/fonts/SVN-Gilroy-Bold.e46346e4.otf");
+  font-weight: 600;
 }
 
 a {

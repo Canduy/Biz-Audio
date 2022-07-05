@@ -1,0 +1,140 @@
+.sidebar {
+  width: 20%;
+  min-width: 340px;
+  background-color: #fcfcfc;
+  box-shadow: -12px 0 40px rgb(61 64 198 / 4%);
+
+  .sidebar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 76px;
+    margin-right: 48px;
+    margin-top: 10px;
+
+    &__cart {
+      padding: 8px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      .avartar {
+        border-radius: 50%;
+      }
+    }
+
+    &__noti {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        background-color: #00cc67;
+        border-radius: 50%;
+        top: 25%;
+        right: 15px;
+      }
+    }
+
+    &__avartar {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        background-color: #3d40c6;
+        top: 14%;
+        border-radius: 50%;
+        right: 8px;
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  .sidebar-listen {
+    margin: 40px 30px;
+
+    &__title {
+      font-family: "SVN-Gilroy";
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0.6px;
+      color: #262338;
+      cursor: default;
+      user-select: none;
+      margin-bottom: 50px;
+      h2 {
+        font-size: 2.75rem;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .rank {
+    top: -18px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    background: #ff4c4d;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+  }
+
+  .sidebar-target {
+    &__title {
+      font-family: "SVN-Gilroy";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 40px;
+      letter-spacing: 0.5px;
+      color: #262338;
+      margin: 60px 0 30px;
+      cursor: default;
+      user-select: none;
+      h2 {
+        font-size: 2.7rem;
+        font-weight: 800;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      height: 400px;
+      background-color: #f7f7fc;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+.target-btn {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  width: 70%;
+  border-radius: 40px;
+  justify-content: center;
+  background-color: #eee5fe;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #3c0594;
+  margin-top: 24px;
+}

@@ -1,0 +1,43 @@
+.navbar-list {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  border-radius: 20px 0 0 20px;
+  margin-bottom: 18px;
+
+  &.active {
+    background-color: #fff;
+  }
+  &:hover {
+    background-color: #fff;
+    transition: all ease 0.1s;
+  }
+
+  .navbar-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .navbar-title {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 500;
+
+    &.active {
+      color: #000;
+      font-weight: 600;
+    }
+  }
+}
+
+.navbar-list:hover .navbar-title {
+  color: #000;
+  font-weight: 600;
+  transition: all ease 0.1s;
+}
+
+.navbar-list:hover svg {
+  stroke: #3d40c6 !important;
+}

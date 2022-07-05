@@ -7,10 +7,10 @@ const cx = classNames.bind(styles);
 function BackBtn({ to, label }) {
   return (
     <div className={cx("back")}>
-      <Link to={to} className={cx("back-text")}>
+      <a className={cx("back-text")}>
         <LeftIcon className={cx("back-icon")} />
         {label}
-      </Link>
+      </a>
     </div>
   );
 }

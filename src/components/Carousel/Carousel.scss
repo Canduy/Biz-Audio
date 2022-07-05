@@ -1,0 +1,33 @@
+.item {
+  width: 160px !important;
+  height: 230px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+  span {
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 25px;
+    color: #000;
+    margin: 10px 0 5px 0;
+    font-family: "SVN-Gilroy-Bold";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: 1.7rem;
+    line-height: 28px;
+    font-family: "SVN-Gilroy-SemiBold";
+    font-weight: 500;
+    color: #a0a3bd;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+}

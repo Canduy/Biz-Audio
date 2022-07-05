@@ -26,21 +26,29 @@ function Auth() {
             <GoogleIcon className={cx("icon", "icon-gg")} />
             Đăng nhập bằng google
           </Button>
-          <Button to="/login" primary marginTop style={{ marginTop: "60px" }}>
+          <Button
+            // to="/login"
+            primary
+            marginTop
+            style={{ marginTop: "60px" }}
+          >
             Đăng nhập bằng BIBOO
           </Button>
         </div>
         <div className={cx("register")}>
           <span>Chưa có tài khoản</span>
-          <Button text to="/register">
+          <Button
+            text
+            // to="/register"
+          >
             Đăng kí <span className={cx("text-color")}>tài khoản BIBOO</span>{" "}
           </Button>
         </div>
         <div>
-          <Link to="/topic" className={cx("cancel")}>
+          <a className={cx("cancel")}>
             bỏ qua
             <RightIcon />
-          </Link>
+          </a>
         </div>
       </div>
     </Wrapper>

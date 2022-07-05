@@ -1,15 +1,15 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Auth from "./layouts/Auth/Auth";
-import ForgotPass from "./layouts/ForgotPass/ForgotPass";
-import Login from "./layouts/Login/Login";
-import Register from "./layouts/Register/Register";
-import Topic from "./layouts/Topic/Topic";
+import Image from "./components/Image/Image";
+import Rating from "./components/Rating/Rating";
+import SidebarItem from "./components/SidebarItem/SidebarItem";
+import Auth from "./pages/Auth/Auth";
+import Home from "./pages/Home/Home";
+import Register from "./pages/Register/Register";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/auth" element={<Auth />} />
           <Route path="/login" element={<Login />} />
@@ -17,7 +17,16 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/topic" element={<Topic />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      {/* <SidebarItem
+        topic="Kinh tế và tài chính"
+        title="Đàn ông sao hỏa đàn bà sao"
+        author="Adama Natsuki "
+        icon={<Rating value="5" text="(212)" />}
+      >
+        <Image src="https://file.mentor.vn/files/books/file-1634875714424.jpg" />
+      </SidebarItem> */}
+      <Home />
     </div>
   );
 }

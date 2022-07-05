@@ -49,7 +49,7 @@ function Button({
 }
 
 Button.propTypes = {
-  to: PropTypes.string,
+  // to: PropTypes.string,
   href: PropTypes.string,
   primary: PropTypes.bool,
   gray: PropTypes.bool,

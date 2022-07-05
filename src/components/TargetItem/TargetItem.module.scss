@@ -1,0 +1,34 @@
+.target-item {
+  width: 220px;
+  height: 220px;
+
+  &__text {
+    font-family: "SVN-Gilroy";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    margin-top: 15px;
+    color: #a0a3bd;
+    cursor: default;
+    user-select: none;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  &__num {
+    font-family: "SVN-Gilroy-Bold";
+    display: flex;
+    align-items: center;
+    font-size: 4.3rem;
+    font-weight: 900;
+    line-height: 50px;
+    cursor: default;
+    user-select: none;
+  }
+}

@@ -30,7 +30,10 @@ function ForgotPass() {
   return (
     <Wrapper>
       <div className={cx("forgot-password")}>
-        <BackBtn to="/login" label="Quay lại" />
+        <BackBtn
+          //  to="/login"
+          label="Quay lại"
+        />
         <div className={cx("form-forgot")}>
           <form action="">
             <Title>

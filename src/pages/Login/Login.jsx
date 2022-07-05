@@ -64,7 +64,10 @@ function Login() {
   return (
     <Wrapper>
       <div className={cx("login")}>
-        <BackBtn to="/auth" label="Quay lại" />
+        <BackBtn
+          // to="/auth"
+          label="Quay lại"
+        />
         <div className={cx("form-group")}>
           <form action="" className={cx("form")}>
             <Title>
@@ -113,7 +116,7 @@ function Login() {
             )}
             <div className={cx("forgot")}>
               <Button
-                to="/forgot-password"
+                // to="/forgot-password"
                 forgot
                 className={cx("forgot-password")}
               >

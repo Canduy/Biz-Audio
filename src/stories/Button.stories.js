@@ -1,6 +1,6 @@
 import Button from "../components/Button/Button.jsx";
 export default {
-  title: "Component/Button",
+  title: "atom/Button",
   component: Button,
 };
 const Template = (args) => <Button {...args} />;

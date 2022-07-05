@@ -1,0 +1,46 @@
+.category-book__all {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  .book-item {
+    cursor: pointer;
+    width: 25%;
+    padding: 0 15px 10px;
+
+    .book-item__img {
+      max-width: 100%;
+      width: 160px;
+      // height: 230px;
+
+      img {
+        border-radius: 4px;
+        width: 100%;
+      }
+    }
+    .book-item__content {
+      span {
+        font-weight: 600;
+        font-size: 2.1rem;
+        line-height: 26px;
+        color: #262338;
+        margin: 10px 0 5px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+      p {
+        max-width: 160px;
+        font-size: 1.7rem;
+        line-height: 28px;
+        font-family: "SVN-Gilroy-SemiBold";
+        font-weight: 500;
+        color: #a0a3bd;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+      }
+    }
+  }
+}

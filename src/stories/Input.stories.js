@@ -1,8 +1,11 @@
 import Input from "../components/Input/Input";
 
 export default {
-  title: "Component/Input",
+  title: "atom/Input",
   component: Input,
+  args: {
+    width: "300px",
+  },
 };
 
 const Template = (args) => <Input {...args} />;

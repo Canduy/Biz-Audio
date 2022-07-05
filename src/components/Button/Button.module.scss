@@ -11,7 +11,8 @@
   background-color: transparent;
   border: 1px solid transparent;
   user-select: none;
-  width: 100%;
+  max-width: 100%;
+  width: 300px;
 }
 .primary {
   color: var(--text-white, #fff);

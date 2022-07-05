@@ -100,7 +100,10 @@ function Register() {
   return (
     <Wrapper>
       <div className={cx("register")}>
-        <BackBtn to="/auth" label="Quay lại" />
+        <BackBtn
+          // to="/auth"
+          label="Quay lại"
+        />
         <div className={cx("form-group")}>
           <Title>
             <h2 className={cx("title")}>Tạo tài khoản</h2>
@@ -190,9 +193,12 @@ function Register() {
           <div className={cx("register-text")}>
             <span>
               Đã có tài khoản?
-              <Link to="/auth" className={cx("text-color")}>
+              <a
+                // to="/auth"
+                className={cx("text-color")}
+              >
                 Đăng nhập
-              </Link>
+              </a>
             </span>
           </div>
         </div>
