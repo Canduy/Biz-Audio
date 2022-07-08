@@ -1,0 +1,35 @@
+.question-check {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .btn-control {
+    background-color: transparent;
+    outline: none;
+    color: #a0a3bd;
+    font-size: 54px;
+  }
+
+  .btn-check-answer {
+    flex-grow: 1;
+    margin: 0 72px;
+    height: 72px;
+    border-radius: 99px;
+    font-size: 22px;
+    background-color: #3d40c6;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .btn-none {
+    display: none;
+  }
+
+  .btn-check-true {
+    background-color: #00cc67;
+  }
+  .btn-check-fasle {
+    background-color: #ff4c4d;
+  }
+}

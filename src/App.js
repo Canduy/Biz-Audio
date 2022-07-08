@@ -1,9 +1,12 @@
 import "./App.css";
+import Confirm from "./components/Confirm/Confirm";
 import Image from "./components/Image/Image";
+import QuestionNumber from "./components/QuestionNumber/QuestionNumber";
 import Rating from "./components/Rating/Rating";
 import SidebarItem from "./components/SidebarItem/SidebarItem";
 import Auth from "./pages/Auth/Auth";
 import Home from "./pages/Home/Home";
+import Question from "./pages/Question/Question";
 import Register from "./pages/Register/Register";
 
 function App() {
@@ -26,7 +29,7 @@ function App() {
       >
         <Image src="https://file.mentor.vn/files/books/file-1634875714424.jpg" />
       </SidebarItem> */}
-      <Home />
+      <Question />
     </div>
   );
 }

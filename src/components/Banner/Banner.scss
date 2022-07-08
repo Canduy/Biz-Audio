@@ -1,76 +1,78 @@
+.home-banner__content {
+  .slick-list {
+    height: 380px !important;
+  }
+
+  .slick-slider {
+    z-index: 0;
+    &:hover {
+      .slick-next {
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
+      }
+
+      .slick-prev {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+      }
+
+      .slick-control-icon,
+      .slick-prev-icon,
+      .slick-next-icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  .slick-initialized .slick-slide {
+    padding: 0 12px;
+  }
+
+  .slick-slide-custom {
+    width: 600px !important;
+  }
+
+  .slick-prev,
+  .slick-next {
+    height: 100%;
+    width: 80px;
+
+    z-index: 10;
+  }
+
+  .slick-next {
+    right: -1px;
+  }
+
+  .slick-prev {
+    left: -1px;
+  }
+
+  .slick-next:hover,
+  .slick-next:focus {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
+  }
+
+  .slick-prev:hover,
+  .slick-prev:focus {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+  .slick-dots {
+    top: 101%;
+  }
+  .slick-dots li.slick-active button:before,
+  .slick-dots li button:before {
+    color: rgb(59, 57, 57);
+    font-size: 14px;
+  }
+}
+
 .home-banner-item {
   .home-banner-img {
     width: 560px;
     height: 380px;
   }
-}
-
-.slick-list {
-  height: 380px !important;
-}
-
-.slick-slider {
-  z-index: 0;
-  &:hover {
-    .slick-next {
-      background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
-    }
-
-    .slick-prev {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
-    }
-
-    .slick-control-icon,
-    .slick-prev-icon,
-    .slick-next-icon {
-      opacity: 1;
-    }
-  }
-}
-
-.slick-initialized .slick-slide {
-  padding: 0 12px;
-}
-
-.slick-slide-custom {
-  width: 600px !important;
-}
-
-.slick-prev,
-.slick-next {
-  height: 100%;
-  width: 80px;
-
-  z-index: 10;
-}
-
-.slick-next {
-  right: -1px;
-}
-
-.slick-prev {
-  left: -1px;
-}
-
-.slick-next:hover,
-.slick-next:focus {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), transparent);
-}
-
-.slick-prev:hover,
-.slick-prev:focus {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
-}
-
-.slick-prev:before,
-.slick-next:before {
-  display: none;
-}
-.slick-dots {
-  top: 101%;
-}
-.slick-dots li.slick-active button:before,
-.slick-dots li button:before {
-  color: rgb(59, 57, 57);
-  font-size: 14px;
 }
