@@ -1,0 +1,140 @@
+.audio {
+  background-image: url("https://file.mentor.vn/files/books/file-1637723174505.png");
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+
+  .audio-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    z-index: 1;
+  }
+
+  .audio-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 0;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 10;
+
+    svg {
+      cursor: pointer;
+    }
+
+    &__dropdown {
+      position: relative;
+
+      .popup-list {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        right: 0;
+        z-index: 20;
+        padding: 0 16px;
+        border-radius: 16px;
+        background-color: #fff;
+        box-shadow: 0 -12px 40px rgb(61 64 198 / 12%);
+        transition: all 0.2s ease-in;
+        width: 250px;
+
+        .popup-item {
+          list-style: none;
+          margin: 0 -16px;
+
+          &:nth-child(1) {
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+          }
+
+          &:nth-child(3) {
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+          }
+
+          &:hover {
+            background-color: #ece1fe;
+          }
+
+          .popup-link {
+            padding: 20px 30px 20px 20px;
+            display: flex;
+            align-items: center;
+
+            span {
+              font-size: 18px;
+              font-weight: 600;
+              color: #262338;
+              margin-left: 12px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .audio-content {
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        max-width: 250px;
+        max-height: 360px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .auimg {
+        position: absolute;
+        left: 50%;
+        z-index: 1;
+        top: 65px;
+      }
+
+      .audio-name {
+        margin-top: 50px;
+        cursor: default;
+        user-select: none;
+
+        h2 {
+          font-weight: 600;
+          font-size: 25px;
+          max-width: 700px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          line-height: 30px;
+          overflow: hidden;
+        }
+        span {
+          display: block;
+          text-align: center;
+          margin-bottom: 0;
+          color: #6e7191;
+          font-size: 20px;
+        }
+      }
+    }
+
+    &__player {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

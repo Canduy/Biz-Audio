@@ -7,7 +7,9 @@ import SidebarItem from "./components/SidebarItem/SidebarItem";
 import Auth from "./pages/Auth/Auth";
 import Home from "./pages/Home/Home";
 import Question from "./pages/Question/Question";
+import Audio from "./pages/Audioo/Audio";
 import Register from "./pages/Register/Register";
+import PDF from "./pages/PDF/PDF";
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
       >
         <Image src="https://file.mentor.vn/files/books/file-1634875714424.jpg" />
       </SidebarItem> */}
-      <Question />
+      <PDF />
     </div>
   );
 }

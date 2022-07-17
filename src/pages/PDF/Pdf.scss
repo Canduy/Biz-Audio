@@ -1,0 +1,17 @@
+.pdf-bg {
+  background-color: #f7f7fc;
+  user-select: none;
+  // height: 100vh;
+  transition: all 0.45s ease-in-out;
+
+  .pdf-container {
+    height: 100vh;
+    width: 85%;
+    margin: 0 auto;
+    transition: all 0.45s ease;
+    position: relative;
+  }
+  .pdf-container__fullscreen {
+    width: 100%;
+  }
+}

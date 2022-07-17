@@ -1,0 +1,424 @@
+.pdf-container__title {
+  background-color: #f7f7fc;
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 8px;
+  gap: 8px;
+  transition: all 0.45s ease;
+
+  .pdf-btn-back {
+    background-color: #f7f7fc;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: #eee5fe;
+    }
+  }
+
+  .pdf-title {
+    cursor: default;
+    width: 80%;
+    user-select: none;
+    h2 {
+      font-family: "SVN-Gilroy";
+      font-style: normal;
+      color: #14142b;
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 0;
+      line-height: 40px;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .btn-audio {
+    border: 2px solid #3d40c6;
+    background: #f7f7fc;
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 219px;
+    height: 64px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 16px;
+    gap: 16px;
+
+    &__icon {
+      font-size: 40px;
+      color: #3d40c6;
+    }
+
+    button {
+      background-color: #f7f7fc;
+      color: #3d40c6;
+      font-weight: 600;
+    }
+  }
+}
+
+.pdf-title__none {
+  display: none;
+}
+
+.pdf-content,
+.pdf-content__full {
+  width: 100%;
+  height: 85%;
+  background-color: #6e7191;
+  overflow: hidden;
+  transition: all 0.45s ease-in-out;
+  padding: 40px 40px 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__pageNumber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4e4b66;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .pdf-book {
+    position: absolute;
+    top: 50%;
+    // right: 10%;
+    transform: translate(10%, -50%);
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+
+    .transform-component-module_wrapper__1_Fgj {
+      width: 79%;
+      overflow: unset;
+    }
+
+    .transform-component-module_content__2jYgh {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  .controls-prev {
+    position: absolute;
+    left: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+  }
+  .controls-next {
+    position: absolute;
+    right: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+  }
+}
+
+.pdf-content__full {
+  padding: 0;
+}
+
+.pdf-tool__container,
+.pdf-tool__full {
+  background-color: #f7f7fc;
+  width: 100%;
+  position: fixed;
+  bottom: -10px;
+  right: 0;
+  // left: -5%;
+  height: 70px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  transition: all 0.45s ease-in-out;
+  // transform: translateX(50px);
+
+  .pdf-tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 32px;
+    gap: 32px;
+  }
+  .tool-icon {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all ease 0.2s;
+
+    &:hover {
+      background-color: #eee5fe;
+    }
+  }
+}
+
+.pdf-tool__full {
+  bottom: -70px;
+}
+
+.pdf-down {
+  position: absolute;
+  top: -40px;
+  right: 15px;
+  transform: rotate(90deg);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7fc;
+  border-radius: 50%;
+}
+
+.pdf-up {
+  position: absolute;
+  top: -40px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7fc;
+  border-radius: 50%;
+  transform: rotate(270deg);
+}
+
+.tab-content {
+  position: absolute;
+  left: -50%;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
+  overflow: auto;
+  width: 25%;
+  list-style: none;
+  padding: 0;
+  transition: all 0.45s ease-in-out;
+
+  &.active {
+    left: 0;
+  }
+
+  li {
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+
+    &:hover {
+      background-color: #eee5fe;
+    }
+  }
+}
+
+.tab-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.tab-content::-webkit-scrollbar-track {
+  background: #d7d8e0;
+}
+
+/* Handle */
+.tab-content::-webkit-scrollbar-thumb {
+  background: #d7d8e0;
+}
+
+/* Handle on hover */
+.tab-content::-webkit-scrollbar-thumb:hover {
+  background: #d7d8e0;
+}
+// ============================/
+.book-section {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  background-color: #fff;
+  width: 35%;
+  box-shadow: 0px 12px 40px rgba(61, 64, 198, 0.08);
+  height: 100%;
+  overflow: auto;
+  transition: all 0.45s ease-in-out;
+  z-index: 99;
+
+  &.active {
+    right: 0;
+  }
+
+  .chapter-title {
+    padding: 20px 35px;
+    color: #262338;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+  }
+
+  .book-chapter__border-bottom {
+    border: 1px solid #d9dbe9;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .chapter-list {
+    .lesson-title {
+      padding: 16px 20px;
+      font-style: normal;
+      font-weight: 700;
+      color: #14142b;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      color: #4e4b66;
+      font-size: 16px;
+      font-family: "SVN-Gilroy-Bold";
+      line-height: 20px;
+      &.active {
+        background-color: rgba(193, 156, 252, 0.3);
+      }
+
+      &.lock {
+        color: #c8c7cf;
+      }
+
+      &:hover {
+        background-color: rgba(193, 156, 252, 0.3);
+      }
+
+      .lesson-icon {
+        margin-right: 12px;
+      }
+
+      .lesson-content {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.book-section::-webkit-scrollbar {
+  width: 4px;
+}
+.book-section::-webkit-scrollbar-track {
+  background: #d7d8e0;
+}
+.book-section::-webkit-scrollbar-thumb {
+  background: #d7d8e0;
+}
+.book-section::-webkit-scrollbar-thumb:hover {
+  background: #d7d8e0;
+}
+
+.react-pdf__Document {
+  width: 100%;
+  height: 100%;
+}
+.react-pdf__Page {
+  width: 100%;
+  height: 100%;
+}
+.react-pdf__Page__canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+// -===================
+.speed-read__list {
+  position: absolute;
+  // top: 0;
+  width: 216px;
+  bottom: 100%;
+  box-shadow: 0 -12px 40px rgb(61 64 198 / 12%);
+  background-color: #fcfcfc;
+  // left: 0;
+  transform: translateX(-80px);
+  text-align: center;
+  color: #14142b !important;
+  padding: 0;
+  border-radius: 16px;
+  list-style: none;
+
+  .speed-read__title {
+    border-bottom: 1px solid #d9dbe9;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    color: #a0a3bd;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    list-style: none;
+    cursor: auto;
+  }
+
+  .speed-read {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    color: #a0a3bd;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    list-style: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(193, 156, 252, 0.3);
+      color: #262338;
+    }
+  }
+}
+
+.svg-icon {
+  position: relative;
+}
+.tool-icon__timer {
+  position: absolute;
+  font-size: 7px;
+  bottom: 24px;
+  transform: translateX(-18px);
+}

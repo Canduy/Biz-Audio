@@ -53,6 +53,12 @@ function QuestionCheck({
 
   const handlePrev = () => {
     setQuestionNumber((prev) => prev - 1);
+    setStatus({
+      ...status,
+      error: false,
+      success: false,
+      showBtn: false,
+    });
   };
 
   const handleNext = () => {

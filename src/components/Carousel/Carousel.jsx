@@ -36,7 +36,7 @@ function Carousel() {
       author: "Dich gia: Tran Vi",
     },
     {
-      id: 5,
+      id: 6,
       img: "https://file.mentor.vn/files/books/file-1637914244147.jpg",
       title: "Su that ve ung thu",
       author: "Dich gia: Tran Vi",
